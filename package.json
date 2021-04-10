@@ -38,6 +38,9 @@
       "last 1 safari version"
     ]
   },
+  "globals": {
+    "cy": true
+  },
   "devDependencies": {
     "cypress": "^7.0.1"
   }
