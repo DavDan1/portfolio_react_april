@@ -1,5 +1,3 @@
-import { within } from "@testing-library/dom";
-
 describe("User can see My Cv", () => {
   beforeEach(() => {
     cy.visit("/");
@@ -28,15 +26,15 @@ describe("User can see My Cv", () => {
 
   it("user can see My Cv info", () => {
     cy.get("#cv-1").within(() => {
-      cy.get(".name").should("contain", "Davit Danielyan");
+      cy.get("#name").should("contain", "Davit Danielyan");
 
-      cy.get(".address").should(
+      cy.get("#address").should(
         "contain",
         "Mässvägen 15, 19161 Sollentuna Stockholm, Sweden"
       );
-      cy.get(".occupation").should("contain", "Fullstack Developer");
-      cy.get(".experience").should("contain", "Frontend Developer");
-      cy.get(".current").should("contain", "Student At Craft Academy");
+      cy.get("#occupation").should("contain", "Fullstack Developer");
+      cy.get("#experience").should("contain", "Frontend Developer");
+      cy.get("#current").should("contain", "Student At Craft Academy");
     });
   });
 });
