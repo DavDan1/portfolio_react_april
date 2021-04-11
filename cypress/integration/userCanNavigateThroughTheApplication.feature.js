@@ -21,6 +21,9 @@ describe("User can navigate the app", () => {
     it("does not display Hello World", () => {
       cy.get("#hello").should("not.exist");
     });
+    it("does not display My CV header", () => {
+      cy.get("#cv-header").should("not.exist");
+    });
   });
 
   describe("to My Projects tab and it", () => {
@@ -40,6 +43,9 @@ describe("User can navigate the app", () => {
     });
     it("does not display Hello World", () => {
       cy.get("#hello").should("not.exist");
+    });
+    it("does not display My CV header", () => {
+      cy.get("#cv-header").should("not.exist");
     });
   });
 
@@ -63,5 +69,29 @@ describe("User can navigate the app", () => {
     it("does not display My Projects header", () => {
       cy.get("#projects-header").should("not.exist");
     });
+    it("does not display My CV header", () => {
+      cy.get("#cv-header").should("not.exist");
+    });
+  });
+
+  describe("CV tab and it", () => {
+    cy.get("#cv-tab").click();
+  });
+
+  it("displays My CV header", () => {
+    cy.get("#cv-header").should("contain", "My CV");
+  });
+  it("dispalys component name in url", () => {
+    cy.url().should("contain", "projects");
+  });
+  it("does not display About Me header", () => {
+    cy.get("#about-header").should("not.exist");
+  });
+
+  it("does not display My Projects header", () => {
+    cy.get("#projects-header").should("not.exist");
+  });
+  it("does not display Hello World", () => {
+    cy.get("#hello").should("not.exist");
   });
 });

@@ -3,13 +3,15 @@
     "id": 1,
     "name": "My First Project",
     "image": "https://venturebeat.com/wp-content/uploads/2012/02/contacts.jpg?fit=400%2C402&strip=all",
-    "description": "My first major project included creating a website where you can store contact information"
+    "description": "My first major project included creating a website where you can store contact information",
+    "link": "https://www.mirabarstockholm.se/"
   },
   {
     "id": 2,
     "name": "FizzBuzz",
     "image": "https://image.slidesharecdn.com/20101125-ocp-xpday-101129162801-phpapp02/95/the-openclosed-principle-dojo-2-638.jpg?cb=1422641239",
-    "description": "One of the first things we did with Ruby was to create the FizzBuzz game"
+    "description": "One of the first things we did with Ruby was to create the FizzBuzz game",
+    "link": "https://github.com/DavDan1/fizzbuzzmar_2021"
   },
   {
     "id": 3,
