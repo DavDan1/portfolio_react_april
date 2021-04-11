@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "name": "Davit Danielyan",
+        "address": "Mässvägen 15, 19161 Sollentuna Stockholm, Sweden",
+        "occupation":"Fullstack Developer",
+        "experience":"Frontend Developer",
+        "current":"Student At Craft Academy"
+
+    }
+
+]
