@@ -1,18 +1,36 @@
 import React, { Component } from "react";
-import { Container } from "semantic-ui-react";
+import { Card ,Container , Grid, Header} from "semantic-ui-react";
+import axios from "axios";
+import CvCard from "./CvCards";
 
-const Cv = () => {
-  return (
-    <Container>
-      <h1 id="cv-header">My Cv</h1>
-      <h3 id="name">Davit Danielyan</h3>
-      <p id="address">Mässvägen 15, 19161 Sollentuna Stockholm, Sweden</p>
-      <p id="occupation">Fullstack Developer</p>
-      <p id="experience">Frontend Developer</p>
-    <p id="current">Student at Craft Academy</p>
-    </Container>
-  );
-  
-};
+class MyCv extends Component {
+  state = {
+    cv: [],
+  };
 
-export default Cv;
+  render() {
+    const { cv } = this.state;
+
+    let cvList = cv.map((cv) => {
+      return (
+        <div id={`cv-${cv.id}`} key={cv.id}>
+          <CvCard cv={cv} />
+        </div>
+      );
+    });
+
+    return (
+      <Container>
+        <h1 id="cv-header">Personal Information</h1>
+        <Grid>{cvList}</Grid>
+      </Container>
+    );
+  }
+  componentDidMount() {
+    axios.get("./data/cv.json").then((response) => {
+      this.setState({ cv: response.data });
+    });
+  }
+}
+
+export default MyCv;

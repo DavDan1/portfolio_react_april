@@ -27,10 +27,8 @@ describe("User can see My Cv", () => {
 
   it("displays personal info", () => {
     cy.get("#address").should("contain.text", "Mässvägen 15");
-
     cy.get("#country").should("contain.text", "Sweden");
     cy.get("#city").should("contain.text", "Stockholm");
-
     cy.get("#phone").should("contain.text", "+46729420089");
     cy.get("#email").should("contain.text", "david-danielyan@hotmail.com");
   });
@@ -39,6 +37,5 @@ describe("User can see My Cv", () => {
     cy.get("#bachelors").should("contain.text", "Bachelor`s degree");
     cy.get("#frontend-developer").should("contain.text", "Frontend Developer");
     cy.get("#fullstack-developer").should("contain.text","Fullstack Developer");
-    });
-});  
-
+  });
+});
