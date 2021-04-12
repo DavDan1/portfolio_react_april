@@ -4,9 +4,9 @@ describe("User can see My Cv", () => {
     cy.get("#cv-tab").click();
   });
 
-  //it("displays My Cv header", () => {
-  //  cy.get("#cv-header").should("contain", "Personal Information");
-  //});
+  it("displays My Cv header", () => {
+    cy.get("#cv-header").should("contain", "Personal Information");
+  });
   it("dispalys component name in url", () => {
     cy.url().should("contain", "cv");
   });
@@ -20,13 +20,13 @@ describe("User can see My Cv", () => {
     cy.get("#projects-header").should("not.exist");
   });
 
- // it("displays headers for cv sections", () => {
+ //it("displays headers for cv sections", () => {
    // cy.get("#info-header").should("contain.text", "Personal Info");
    // cy.get("#education-header").should("contain.text", "Education");
   //});
 
   //it("displays personal info", () => {
-   // cy.get(".address").should("contain.text", "Mässvägen 15");
+  //cy.get("#cv-address").should("contain.text", "Mässvägen 15");
 
     //cy.get(".country").should("contain.text", "Sweden");
     //cy.get(".city").should("contain.text", "Stockholm");
@@ -40,3 +40,4 @@ describe("User can see My Cv", () => {
   // cy.get("#fullstack-developer").should("contain.text","Fullstack Developer");
   //});
 });
+//});
