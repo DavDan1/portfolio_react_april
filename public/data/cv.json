@@ -3,6 +3,7 @@
         "id":1,
         "name": "Davit Danielyan",
         "address": "Mässvägen 15 , 19161 Sollentuna, Stockholm, Sweden",
+        "email": "david-danielyan@hotmail.com",
         "occupation":"Fullstack Developer",
         "experience":"Frontend Developer",
         "current":"Student At Craft Academy"

@@ -55,7 +55,7 @@ describe("User can navigate the app", () => {
       cy.get("#header").click();
     });
 
-    it("displays Hello World", () => {
+    it("displays This page is under construction :)", () => {
       cy.get("#hello").should("contain", "Hello");
     });
 
