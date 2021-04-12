@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card ,Container , Grid, Header} from "semantic-ui-react";
+import { Container , Grid} from "semantic-ui-react";
 import axios from "axios";
 import CvCard from "./CvCards";
 

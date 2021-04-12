@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Divider, Card, Header } from "semantic-ui-react";
+import {Card} from "semantic-ui-react";
 
 
 
